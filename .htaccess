@@ -1,0 +1,21 @@
+# Кодировка отдаваемых файлов
+AddDefaultCharset Off
+
+# Страница по умолчанию для url типа папок "catalog/"
+<IfModule dir_module>
+    DirectoryIndex index.php
+</IfModule>
+
+# Запрет на отображение содержимого каталога при отсутствии индексного файла
+Options -Indexes
+
+# Запрет доступа к определённому файлу
+<Files else.php>
+    Deny from all 
+</Files>
+
+
+
+
+
+
